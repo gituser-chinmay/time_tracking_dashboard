@@ -1,0 +1,117 @@
+@font-face {
+    font-family: rubik_light;
+    src: url("fonts/Rubik-Light.ttf");
+}
+
+@font-face {
+    font-family: rubik;
+    src: url("fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+    font-family: rubik_bold;
+    src: url("fonts/Rubik-Medium.ttf");
+}
+
+body, html, h1, p, img {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+    display: flex;
+}
+
+.dashboard {
+    width: 100%;
+    height: auto;
+
+    margin: 180px auto;
+}
+
+.profile-tab {
+    padding: 0;
+    margin: 0;
+
+    width: 21%;
+    height: 100%;
+
+    float: left;
+}
+
+.user-details {
+    position: relative;
+
+    background-color: hsl(246, 57%, 45%);
+    border-radius: 17px;
+    border-style: none;
+
+    padding: 30px;
+
+    line-height: 50px;
+
+    z-index: 2;
+}
+
+.user-details img {
+    width: 80px;
+    height: 80px;
+
+    border: 4px solid #fff;
+    border-radius: 100%;
+
+    margin-bottom: 20px;
+}
+
+.grey-text {
+    font-size: 16px;
+    font-family: rubik_bold;
+    
+    color: hsl(235, 45%, 61%);
+
+    margin: 0px;
+}
+
+.user-details p{
+    font-family: rubik_light;
+    font-size: 45px;
+    color: #fff;
+
+    word-wrap: break-word;
+
+    margin-bottom: 50px;
+}
+
+.time-frames {
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 17px;
+
+    z-index: 1;
+
+    padding: 30px;
+}
+
+.time-frames p {
+    line-height: 40px;
+    position: relative;
+    top: 30px;
+
+    margin-bottom: 30px;
+    color: hsl(236, 100%, 87%);
+}
+
+#daily:hover, #weekly:hover, #monthly:hover {
+    cursor: pointer;
+
+    color: #fff;
+
+    transition-duration: 0.3s;
+}
