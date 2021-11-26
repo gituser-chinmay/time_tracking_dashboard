@@ -24,6 +24,7 @@ body {
 
 .container {
     display: flex;
+    overflow: hidden;
 }
 
 .dashboard {
@@ -35,9 +36,9 @@ body {
 
 .profile-tab {
     padding: 0;
-    margin: 0;
+    margin: 0px 20px 0px 0px;
 
-    width: 21%;
+    width: 20%;
     height: 100%;
 
     float: left;
@@ -114,4 +115,101 @@ body {
     color: #fff;
 
     transition-duration: 0.3s;
+}
+
+.data-cards {
+    width: 80%;
+    margin-left: 23%;
+
+    position: relative;
+}
+
+.card {
+    width: 25%;
+    background-color: hsl(15, 100%, 70%);
+    border-style: none;
+    border-radius: 17px;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+.card img {
+    width: 25%;
+    height: 25%;
+
+    position: relative;
+    left: 180px;
+    bottom: 10px;
+
+    margin: 0px;
+}
+
+.data {
+    width: 25%;
+    background-color: hsl(235, 46%, 20%);
+
+    border-radius: 17px;
+
+    z-index: 2;
+
+    position: relative;
+    bottom: 20px;
+
+    padding: 30px 0px 0px 30px;
+
+    /* line-height: 76px; */
+    
+}
+
+.card-name {
+    font-family: rubik_bold;
+    font-size: 18px;
+    color: #fff;
+
+    display: block;
+    float: left;
+/* 
+    margin-left: 30px;
+    margin-top: 30px; */
+}
+
+.dots {
+    display: block;
+    font-size: 30px;
+    color: hsl(235, 45%, 61%);
+
+    position: relative;
+    left: 140px;
+    bottom: 15px;
+
+}
+
+.time-data {
+    display: block;
+    /* margin-top: 20px; */
+    position: relative;
+    bottom: 20px;
+    font-family: rubik_light;
+    font-size: 50px;
+    color: #fff;
+}
+
+.last-week {
+    display: block;
+    /* margin-top: 20px; */
+    position: relative;
+    bottom: 25px;
+    color: hsl(236, 100%, 87%);
+
+    font-size: 15px;
+    font-family: rubik_bold;
+}
+
+.card-container {
+    width: 100%;
+    float: left;
+    background-color: #fff;
 }
