@@ -95,7 +95,7 @@ body {
     background-color: hsl(235, 46%, 20%);
     border-radius: 17px;
 
-    z-index: 1;
+    /* z-index: 1; */
 
     padding: 30px;
 }
@@ -124,7 +124,7 @@ body {
     position: relative;
 }
 
-.card {
+/* .card {
     width: 25%;
     background-color: hsl(15, 100%, 70%);
     border-style: none;
@@ -133,7 +133,7 @@ body {
     overflow: hidden;
 
     z-index: 1;
-}
+} */
 
 
 .card img {
@@ -169,7 +169,7 @@ body {
     font-size: 18px;
     color: #fff;
 
-    display: block;
+    display: table;
     float: left;
 /* 
     margin-left: 30px;
@@ -177,7 +177,7 @@ body {
 }
 
 .dots {
-    display: block;
+    display: table;
     font-size: 30px;
     color: hsl(235, 45%, 61%);
 
@@ -188,7 +188,7 @@ body {
 }
 
 .time-data {
-    display: block;
+    display: table;
     /* margin-top: 20px; */
     position: relative;
     bottom: 20px;
@@ -198,7 +198,7 @@ body {
 }
 
 .last-week {
-    display: block;
+    display: table;
     /* margin-top: 20px; */
     position: relative;
     bottom: 25px;
@@ -208,8 +208,84 @@ body {
     font-family: rubik_bold;
 }
 
-.card-container {
-    width: 100%;
-    float: left;
+.work-container {
+    z-index: -2;
+    width: 30%;
+    /* float: left; */
     background-color: #fff;
 }
+ /* Starting new styles for cards */
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+
+  .row {
+    margin: 0px -5px 5px -5px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card-behind {
+    border-style: none;
+    border-radius: 17px;
+
+    z-index: 0;
+
+    overflow: hidden;
+  }
+
+  .card-behind img {
+    width: 25%;
+    height: 25%;
+
+    position: relative;
+    left: 225px;
+    bottom: 10px;
+  }
+
+  .card-front {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 17px;
+
+    z-index: 1;
+
+    padding: 26px 26px;
+
+    position: relative;
+    bottom: 20px;
+  }
+
+  .card-header {
+    padding: 0px;
+    font-family: rubik_bold;
+    color: #fff;
+    font-size: 18px;
+
+    margin-bottom: 20px;
+  }
+
+  .time-spent {
+    padding: 0px;
+    font-family: rubik_light;
+    color: #fff;
+    font-size: 44px;
+  }
+
+  .time-lastweek {
+    padding: 0px;
+    font-family: rubik_bold;
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+      background-color:hsl(226, 43%, 10%);
+  }
